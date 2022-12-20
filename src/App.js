@@ -4,12 +4,14 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 import Nav from "./Components/Nav";
 import Home from "./Components/Home";
+import About from "./Components/SmallComponents/About";
 
 const App = () =>{
   return <>
      <Header/>
      <Nav/>
      <Home/>
+     <About/>
   </>  
 }
 
