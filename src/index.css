@@ -12,10 +12,31 @@
 .navList a{
     text-transform: uppercase;
     cursor: pointer;
+    font-size: 18px;
 }
 .navList a:hover{
-    color: rgb(184, 25, 52) !important;
-    
+    color: rgb(184, 25, 52) !important; 
+    font-weight: 700;   
+}
+nav{
+    position: sticky;
+    top:0px;
+    z-index: 999;
+    background-color: white;
 }
 
+
+/*-----baner----*/
+.bannerContent{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CimgBox{
+    width:20%;
+}
+.Cbox{
+    justify-content: center;
+    align-items: center;
+}
 

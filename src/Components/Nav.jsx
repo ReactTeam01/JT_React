@@ -15,7 +15,7 @@ const Nav = ()=>{
                         </div> 
 
                         <div className="navList">
-                            <ul className="d-flex list-unstyled gap-3 m-0 ">
+                            <ul className="d-flex list-unstyled gap-4 m-0 ">
                                 <li>
                                     <a>Home</a>    
                                 </li>  
