@@ -1,15 +1,6 @@
-
+import Img from "../img";
 const Costumors =()=>{
-    let costomerImg=["Cimg/Logo-1.png",
-    "Cimg/Logo-2.png",
-    "Cimg/Logo-3.png",
-    "Cimg/Logo-4.png",
-    "Cimg/Logo-5.png",
-    "Cimg/Logo-6.png",
-    "Cimg/Logo-7.png",
-    "Cimg/Logo-8.png",
-    "Cimg/Logo-9.png",
-    "Cimg/Logo-10.png"];
+    
     return<>
        <article>
             <div className="mainCostomer py-3">
@@ -19,7 +10,7 @@ const Costumors =()=>{
                     </div>
                     <div className="Cbox d-flex flex-wrap">
                        {
-                        costomerImg.map((val)=>{
+                        Img.Customers.map((val)=>{
                             return(
                                 <div className="CimgBox m-1 ">
                                      <img src={val} className="w-100"/>
