@@ -26,7 +26,7 @@
     color: rgb(184, 25, 52); 
     font-weight: 700;   
 }
-.navList a:last-child:hover{
+.navList a:hover :last-child{
     color: rgb(243, 237, 238); 
     font-weight: 700;   
 }
