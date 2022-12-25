@@ -7,7 +7,7 @@ const Cards =(props)=>{
                 <h4 className="p-2 text-center fs-5">{props.title}</h4>
                 <p>{props.Desc}</p>
                 <div>
-                    <Buttons text="View More" />
+                    <Buttons text="View More" url="/Contactus"/>
                 </div>
             </div>
         </>

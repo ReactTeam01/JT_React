@@ -21,7 +21,7 @@ const Footer =()=>{
                         </div>
                     </div>
                     <div className="fCreadit mt-5 p-3">
-                        <p>© 2018 All rights Reserved. Design by <a href="#">Code fusion Infotech</a></p>
+                        <p>© 2018 All rights Reserved. Design by <a href="http://codefusioninfotech.com/" target="_blank">Code fusion Infotech</a></p>
                     </div>
                 </div>
            </footer>

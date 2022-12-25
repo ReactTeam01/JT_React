@@ -1,5 +1,11 @@
-.Hrow,.navBox{
+.Hrow,.navBox,.navList{
     justify-content: space-between;
+    align-items: center;
+}
+.Mbtn{
+    display:none;
+}
+.navList ul{
     align-items: center;
 }
 .mainNav{
@@ -13,9 +19,15 @@
     text-transform: uppercase;
     cursor: pointer;
     font-size: 18px;
+    text-decoration: none;
+    color:black;
 }
 .navList a:hover{
-    color: rgb(184, 25, 52) !important; 
+    color: rgb(184, 25, 52); 
+    font-weight: 700;   
+}
+.navList a:: last-child:hover{
+    color: rgb(243, 237, 238); 
     font-weight: 700;   
 }
 nav{
@@ -39,4 +51,33 @@ nav{
     justify-content: center;
     align-items: center;
 }
+h1,h2,h3,h4,h5{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.Dmenu {
+    position: absolute;
+    left: -20px;
+    right: -138px;
+    background-color: white;
+    padding: 10px 20px;
+    list-style: none;
+    line-height: 1.8;
+    border-radius: 8px;
+    box-shadow: 2px 11px 16px -12px grey;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    transform: translateY(0px);
+}
+.drop:hover .Dmenu{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s;
+    transform: translateY(10px);
+    
+}
+
+.Show{
+    display:block;
+}
