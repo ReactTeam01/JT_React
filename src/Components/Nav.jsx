@@ -49,7 +49,7 @@ const Nav = ()=>{
                                     <li>
                                     <Buttons icon={<ContactPhoneIcon/>}
                                     text="Enquiry Now" 
-                                    url="/Contactus"                          
+                                    url="tel:8770424760"                          
                                         />
                                     </li>  
                                 </ul>                           
