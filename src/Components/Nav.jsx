@@ -16,9 +16,9 @@ const Nav = ()=>{
                 <div className="container">
                     <div className="navBox d-flex py-2">
                         <div className="logo w-25">
-                            <a href="#">
+                            <Link to="/">
                                 <img src={Img.logo} className="w-100"/>    
-                            </a>    
+                            </Link>    
                         </div> 
                         <div className="Mbtn">
                             <MenuIcon onClick={menuHideShow}/>
