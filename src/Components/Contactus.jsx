@@ -6,53 +6,104 @@ import AddLocationIcon from '@mui/icons-material/AddLocation';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 import "./Contact.css"
+import { useState } from "react";
 const Contactus=()=>{
+    const [erro, UpdateError] = useState();
+    const [data,Update] = useState({
+        Name:"",
+        Email:"",
+        Number:"",
+        Massage:"",
+    });
+    const [sdata, finalData]= useState([]);
+    
+   
+    const inputEvent=(e)=>{
+        let {name, value } = e.target;  
+        Update((oldval)=>{           
+            return{
+                ...oldval,
+                 [name]:value,
+            }
+        })
+        
+    }
+    const submitEvent=()=>{
+        finalData((old)=>{
+            return[...old,data] 
+        });
+        sentData();
+    }
+
+    function sentData(){
+        sdata.map((val)=>{
+            if(val.Name=="" && val.Email=="" && val.Number=="" && val.Massage==""){
+                UpdateError("Please Fill The From Carefully...."); 
+            }else{
+            let url="https://wa.me/+917909620000?text="
+            +"Name :"+val.Name+ "%0a"
+            +"Email :"+val.Email+ "%0a"
+            +"Number :"+val.Number+ "%0a"
+            +"Massage :"+val.Massage;
+            
+            window.open(url).focus();
+            }
+        });
+        
+    }
     return(
-        <>
+        <>        
             <AboutDescription aSrc={contactbaner}/>
             <div className="mainContact py-5 ">                
                 <div className="container">
                     <div className="row RBox border py-4">
                         <div className="col-md-6">
                             <div className="ContactBox">
+                                <p className="text-danger"><strong>{erro}</strong></p>
                                 <from>
                                     <div className="NameField">
                                         <label>Full Name:</label>
                                         <input type="text" 
-                                        name="name" 
-                                        value="" 
+                                        name="Name" 
+                                        
                                         placeholder="Enter Name .." 
-                                        autocomplete="off"/>
+                                        autocomplete="off"
+                                        onChange={inputEvent}/>
                                     </div>
 
                                     <div className="NameField">
                                         <label>Email:</label>
                                         <input type="Email" 
                                         name="Email" 
-                                        value=""
+                                        
                                          placeholder="Enter Email .."
-                                        autocomplete="off"/>
+                                        autocomplete="off"
+                                        onChange={inputEvent}/>
                                     </div>
 
                                     <div className="NameField">
                                         <label>Mobile No:</label>
                                         <input type="number"
-                                         name="number"
-                                         value=""
+                                         name="Number"
+                                      
                                         placeholder="Enter Number .."
-                                        autocomplete="off"/>
+                                        autocomplete="off"
+                                        onChange={inputEvent}/>
                                     </div>
 
                                     <div className="NameField">
                                         <label>Massage</label>
                                         <textarea type="massage" 
                                         placeholder="Enter Massage here" 
-                                        name="massage"
-                                        autocomplete="off"></textarea> 
+                                        name="Massage"
+                                        autocomplete="off"
+                                        onChange={inputEvent}></textarea> 
                                     </div>
 
                                     <div className="NameField">
-                                        <input type="submit" value="submit" className="btn btn-danger my-2"/>
+                                        <input type="Submit" value="Submit" 
+                                        className="btn btn-danger my-2"
+                                        onClick={submitEvent}/>
                                     </div>
                                 </from>
                             </div>
