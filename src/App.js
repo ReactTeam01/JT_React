@@ -19,7 +19,7 @@ const App = () =>{
   return <>
      <Header/>      
      <Nav/>   
-     
+   
      <Routes>
         <Route index exact path="/" element={<Home/>} />
         <Route exact path="/About" element={<About/>} />    
@@ -30,7 +30,7 @@ const App = () =>{
         <Route exact path="/Tipper" element={<Tipper/>} />     
         <Route exact path="/Contactus" element={<Contactus/>} />  
      </Routes>        
-     <Home/>
+    
      <Footer/>
   </>  
 }
