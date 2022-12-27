@@ -16,7 +16,7 @@ const Nav = ()=>{
                 <div className="container">
                     <div className="navBox d-flex py-2">
                         <div className="logo w-25">
-                            <a href="/">
+                            <a href="#">
                                 <img src={Img.logo} className="w-100"/>    
                             </a>    
                         </div> 
