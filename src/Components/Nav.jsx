@@ -44,6 +44,12 @@ const Nav = ()=>{
                                         </ul>   
                                     </li> 
                                     <li onClick={()=>updates(false)}>
+                                        <Link to="Gallery">Gallery</Link>    
+                                    </li> 
+                                    <li onClick={()=>updates(false)}>
+                                        <Link to="Media">Media</Link>    
+                                    </li> 
+                                    <li onClick={()=>updates(false)}>
                                         <Link to="Contactus">Contact us</Link>    
                                     </li> 
                                     <li>

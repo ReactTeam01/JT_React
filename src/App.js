@@ -12,6 +12,8 @@ import SidewallTrailers from "./Components/Products/SidewallTrailers";
 import TipTrailers from "./Components/Products/TipTrailers";
 import Tipper from "./Components/Products/Tipper";
 import Contactus from "./Components/Contactus";
+import Media from "./Components/Media";
+import Gallery from "./Components/Gallery";
 
 
 
@@ -27,7 +29,9 @@ const App = () =>{
         <Route exact path="/SidewallTrailers" element={<SidewallTrailers/>} />   
         <Route exact path="/RockBody" element={<RockBody/>} />     
         <Route exact path="/TipTrailers" element={<TipTrailers/>} />
-        <Route exact path="/Tipper" element={<Tipper/>} />     
+        <Route exact path="/Tipper" element={<Tipper/>} /> 
+        <Route exact path="/Media" element={<Media/>} />  
+        <Route exact path="/Gallery" element={<Gallery/>} />  
         <Route exact path="/Contactus" element={<Contactus/>} />  
      </Routes>        
     
